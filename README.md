@@ -2,7 +2,7 @@
 A bash script to export local postgresql database schema with data types in a pretty mark down format
 
 ### Requirements:
-This script requires your postgresql database configuration to accept md5 password authentication mode for unix domain sockets
+This script requires your postgresql database configuration to accept md5 password authentication mode for database administrative login by Unix domain socket
 
 ### Make the file executable by following
 ``` sudo chmod +x print-schema.sh ```
