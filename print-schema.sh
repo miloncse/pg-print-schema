@@ -1,14 +1,15 @@
 #!/bin/bash
 
 # Prompt for database credentials
-read -p "Enter Database Host Name: " host
-read -p "Enter Database Name: " dbname
-read -p "Enter Database User Name: " user
-read -s -p "Enter Database User Password: " password
+read -p "Enter host name: " host
+read -p "Enter database port: " port
+read -p "Enter database name: " dbname
+read -p "Enter database user: " user
+read -s -p "Enter database password: " password
 echo
 
 # Connect to the database and retrieve table information
-table_info=$(PGPASSWORD=$password psql -h $host -U $user -d $dbname -t -c \
+table_info=$(PGPASSWORD=$password psql -h $host -p $port -U $user -d $dbname -t -c \
   "SELECT table_name, column_name, data_type
    FROM information_schema.columns
    WHERE table_schema = 'public'
