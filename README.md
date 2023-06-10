@@ -7,5 +7,5 @@ A bash script to export local postgresql database schema with data types in a pr
 ## Run the script 
 ``` sudo ./print-schema.sh ```
 
-## you will get prompt in terminal for for database credentials, after feeding the credentials in terminal you should get a file named "database-name.md" in the same direcotry you ran the script from.
+## you will get prompts in terminal for for database credentials, after feeding the credentials you should get a file named "database-name.md" in the same direcotry you ran the script from.
 ## ENJOY! 
