@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Author: Milon Hossain
+# Date Created: 22/05/23
+# Date Modified: 13/06/23
+
 # Prompt for database credentials
 read -p "Enter host name: " host
 read -p "Enter database port: " port
